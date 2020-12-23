@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 23,
+        "NAME": "Nellyville"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [142.734375, -31.802892586706747]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 21,
+        "NAME": "Brotown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [172.265625, -43.45291889355465]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 328,
+        "NAME": "Winterfell"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.8515625, 30.90222470517144]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 2323,
+        "NAME": "Morningside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [138.8671875, 36.87962060502676]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ID": 5623,
+        "NAME": "Dorne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [142.20703125, -8.928487062665504]
+      }
+    }
+  ]
+}

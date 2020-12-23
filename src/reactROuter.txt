@@ -1,0 +1,9 @@
+Static routing is the old way of routing
+
+eg. routes.js routes = <Route path='Home' component{HomeComponent}/>
+eg. index.js REACTDOM.render(routes, document.getElementById('app'))
+
+^^ Not a good way to do it, not react like.
+
+Dynamic routing - takes place as your app renders
+**everything is a component
