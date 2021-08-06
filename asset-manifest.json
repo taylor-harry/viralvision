@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/viralvision/static/css/main.c589eec2.chunk.css",
+    "main.js": "/viralvision/static/js/main.b66f4405.chunk.js",
+    "main.js.map": "/viralvision/static/js/main.b66f4405.chunk.js.map",
+    "runtime-main.js": "/viralvision/static/js/runtime-main.2a2b84ce.js",
+    "runtime-main.js.map": "/viralvision/static/js/runtime-main.2a2b84ce.js.map",
+    "static/js/2.41afe652.chunk.js": "/viralvision/static/js/2.41afe652.chunk.js",
+    "static/js/2.41afe652.chunk.js.map": "/viralvision/static/js/2.41afe652.chunk.js.map",
+    "index.html": "/viralvision/index.html",
+    "precache-manifest.968d10ec46a79bbd9840e4a8d0fa1bab.js": "/viralvision/precache-manifest.968d10ec46a79bbd9840e4a8d0fa1bab.js",
+    "service-worker.js": "/viralvision/service-worker.js",
+    "static/css/main.c589eec2.chunk.css.map": "/viralvision/static/css/main.c589eec2.chunk.css.map",
+    "static/js/2.41afe652.chunk.js.LICENSE.txt": "/viralvision/static/js/2.41afe652.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a2b84ce.js",
+    "static/js/2.41afe652.chunk.js",
+    "static/css/main.c589eec2.chunk.css",
+    "static/js/main.b66f4405.chunk.js"
+  ]
+}
