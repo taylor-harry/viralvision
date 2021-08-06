@@ -1,21 +1,18 @@
 import React from "react";
 import Home from "./Home";
-import News from "./News";
-import About from "./About";
-import Topics from "./Topics";
 import styled from "styled-components";
 import Map from "./Map";
 import User from "./User";
+import News from "./News";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVirus } from "@fortawesome/free-solid-svg-icons";
-import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 
 import {
-  //these 3 are just components!
   BrowserRouter,
   Route,
   Link,
 } from "react-router-dom";
+
 
 const Footer = styled.footer`
   background-color: #303030;
@@ -23,7 +20,7 @@ const Footer = styled.footer`
 `;
 
 const Wrapper = styled.div`
-  background-color: #000000;
+  background-color: white;
   width: 100%;
   height: auto;
   color: #ffffff;
@@ -43,7 +40,7 @@ const Navigation = styled.ul`
   z-index: 1;
 `;
 
-const Navlink = styled.a`
+const Navlink = styled.div`
   display: block;
   padding: 0.25em 1em;
   color: #ffffff !important;
@@ -71,6 +68,7 @@ const NavTitle = styled.a`
 
 const RoutePages = styled.ul`
   margin: 0;
+  padding: 0px;
 `;
 
 const items = [
@@ -81,7 +79,6 @@ const items = [
 
 function App() {
   return (
-    //parent must be wrapped in BrowserRouter
     <BrowserRouter>
       <Wrapper>
         <Navigation>
@@ -98,12 +95,12 @@ function App() {
           </NavItem>
           <NavItem>
             <Navlink>
-              <Link to="/news">News</Link>
+              <Link to="/maps">Map</Link>
             </Navlink>
           </NavItem>
           <NavItem>
             <Navlink>
-              <Link to="/maps">Map</Link>
+              <Link to="/news">News</Link>
             </Navlink>
           </NavItem>
           <NavItem>
@@ -117,7 +114,7 @@ function App() {
           <Route path="/news" component={News} />
           <Route path="/maps" component={Map} />
         </RoutePages>
-        <Footer>powered by NewsAPI.org</Footer>
+        <Footer>ViralVision</Footer>
       </Wrapper>
     </BrowserRouter>
   );

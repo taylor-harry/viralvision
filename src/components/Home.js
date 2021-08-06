@@ -1,15 +1,38 @@
 import React from "react";
-// ^ you need to import React in this file, even though
-//we are not using it we are still using JSX
 import styled from "styled-components";
+import About from "./About";
+import NewsSample from "./NewsSample";
 
-const Homestyle = styled.div`
-  background-color: #efa730;
-  padding: 20px;
-  text-align: center;
-  border-radius: 20px;
+
+const HomeWrapper = styled.div`
+  height: 800px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  background-image: url("covid.jpg");
+  background-size: 250px;
 `;
 
 export default function Home() {
-  return <Homestyle> HOME </Homestyle>;
+
+  return(
+    <HomeWrapper>
+      <div style={{
+        height:"100%", 
+        display:`flex`,
+        justifyContent: `space-around`, 
+        backgroundColor: `rgba(255, 255, 255, 0.85)`
+        }}>
+      <About></About>
+      <div style={{
+        padding: `5px`, 
+        float: `right`, 
+        overflowY:`hidden`}
+        }>
+        <NewsSample></NewsSample>
+      </div>
+      </div>
+    </HomeWrapper>
+  ) 
+
 }

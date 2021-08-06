@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import onClickOutside from "react-onclickoutside";
 
-//useState allows you to add state to your functional components.
-// Using the useState hook inside a function component, you can create a piece of state without switching to class components.
+
 function Dropdown({ title, items, multiSelect = false }) {
   const [open, setOpen] = useState(false);
-  const [selection, setSelection] = useState([]); //array for multi selection
+  const [selection, setSelection] = useState([]); 
   const toggle = () => setOpen(!open);
   Dropdown.handleClickOutside = () => setOpen(false);
 
   function handleOnClick(item) {
-    //The some() method executes the callback function once for each element present in the array until it finds the one where callback returns a truthy value
+  
     if (!selection.some((current) => current.id === item.id)) {
-      //If no item instate then add item
       if (!multiSelect) {
         setSelection([item]);
       } else if (multiSelect) {
@@ -37,7 +35,7 @@ function Dropdown({ title, items, multiSelect = false }) {
       <div
         tabIndex={0}
         role="button"
-        onKeyPress={() => toggle(!open)} // !open gives opposite to current state
+        onKeyPress={() => toggle(!open)}
         onClick={() => toggle(!open)}
       >
         <div>
